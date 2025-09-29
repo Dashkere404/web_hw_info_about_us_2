@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Артемий Муслин - Наша команда</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <h1>Наша команда</h1>
+        </div>
+        <ul class="nav-list">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="artem.html" class="active">Артемий Муслин</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="main">
+    <section class="person-hero">
+        <div class="person-image">
+            <img src="images/artem-avatar.jpg" alt="Артемий Муслин" class="avatar">
+        </div>
+        <div class="person-info">
+            <h1>Артемий Муслин</h1>
+            <p class="person-title">Студент 3-го курса НИУ ВШЭ | Продуктовый аналитик в Т-банке</p>
+            <div class="person-contacts">
+                <p>📅 20 лет (24.07.2005)</p>
+                <p>📞 + 7 (930) 285-45-08</p>
+                <p>📧 artemmuslin@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="person-content">
+        <div class="about-text">
+            <article class="bio">
+                <h2>Обо мне</h2>
+                <p>Студент 3-го курса НИУ ВШЭ (Бюджет ФКН Программная инженерия) с сильной математической базой (олимпиадник 2-го уровня) и практическим опытом в анализе данных, машинном обучении, работе с SQL и UX-исследованиях.</p>
+
+                <h3>Образование и Достижения</h3>
+                <ol class="education-list">
+                    <li>
+                        <strong>НИУ ВШЭ (ВШЭ)</strong>
+                        <span>2022 - настоящее время</span>
+                        <p>ФКН Программная инженерия (бюджет)</p>
+                    </li>
+                    <li>
+                        <strong>ЕГЭ по информатике</strong>
+                        <span>2022</span>
+                        <p>Сдал на 100 баллов</p>
+                    </li>
+                    <li>
+                        <strong>Олимпиадник</strong>
+                        <span>Школьные годы</span>
+                        <p>Призер олимпиад 2-го уровня</p>
+                    </li>
+                </ol>
+
+                <h3>Опыт работы</h3>
+                <div class="experience">
+                    <strong>Т-банк</strong> - Продуктовый аналитик
+                    <p>Работа с данными, SQL, аналитика продукта</p>
+                </div>
+            </article>
+
+            <article class="skills-section">
+                <h3>Технические навыки</h3>
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <h4>📊 Аналитика данных</h4>
+                        <ul>
+                            <li>Python (pandas, matplotlib, scikit-learn)</li>
+                            <li>SQL (PostgreSQL, хранимые процедуры)</li>
+                            <li>Excel</li>
+                            <li>Data Analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>🎯 Математика</h4>
+                        <ul>
+                            <li>Теория вероятности</li>
+                            <li>Математическая статистика</li>
+                            <li>Алгоритмы и структуры данных</li>
+                            <li>ER-диаграммы, UML</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>💻 Разработка</h4>
+                        <ul>
+                            <li>Python, C/C++</li>
+                            <li>FastAPI / React (базовый уровень)</li>
+                            <li>Git/GitHub</li>
+                            <li>ООП</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <aside class="person-sidebar">
+            <div class="quick-facts">
+                <h3>Быстрые факты</h3>
+                <div class="fact-item">
+                    <strong>Возраст:</strong>
+                    <span>20 лет</span>
+                </div>
+                <div class="fact-item">
+                    <strong>Университет:</strong>
+                    <span>НИУ ВШЭ</span>
+                </div>
+                <div class="fact-item">
+                    <strong>Курс:</strong>
+                    <span>3 курс</span>
+                </div>
+                <div class="fact-item">
+                    <strong>Работа:</strong>
+                    <span>Т-банк</span>
+                </div>
+            </div>
+
+            <div class="links">
+                <h3>Мои ссылки</h3>
+                <a href="https://github.com/Temikmus" class="social-link" target="_blank">
+                    GitHub: Temikmus
+                </a>
+                <a href="t.me/Temik_mus" class="social-link" target="_blank">
+                    Telegram: @Temik_mus
+                </a>
+            </div>
+
+            <div class="interactive">
+                <h3>Интерактив</h3>
+                <p id="randomFact">Нажмите кнопку, чтобы узнать интересный факт!</p>
+                <button class="btn" id="showFactBtn">Показать факт</button>
+            </div>
+        </aside>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Наша команда. Все права защищены.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
