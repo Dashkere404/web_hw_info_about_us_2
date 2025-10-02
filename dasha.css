@@ -162,28 +162,38 @@ a:hover {
 
 
 .achievements {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
   margin: 1.5rem 0;
 }
 
+.achievements h3 {
+  margin-bottom: 1.2rem; /* отступ от заголовка до первой карточки */
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* равномерный отступ МЕЖДУ карточками */
+}
 
 .achievement {
   background-color: var(--card-bg);
-  padding: 1rem;
+  padding: 1.2rem; /* можно чуть больше для воздуха */
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
 
 .achievement h4 {
+  margin: 0 0 0.8rem;
   color: var(--primary-color);
-  margin-bottom: 0.8rem;
 }
 
 .achievement p {
-  margin-bottom: 1rem;
+  margin: 0 0 0.8rem;
   color: var(--text-color);
+}
+
+.achievement p:last-child {
+  margin-bottom: 0;
 }
 
 .achievement img {
