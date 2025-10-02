@@ -132,6 +132,7 @@ a:hover {
 .about-text h3 {
   color: var(--primary-color);
   margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .about-text h2 {
