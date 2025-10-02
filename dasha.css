@@ -168,9 +168,6 @@ a:hover {
   margin: 1.5rem 1;
 }
 
-.achievements .achievement:first-child {
-  padding-top: 0rem;
-}
 
 .achievement {
   background-color: var(--card-bg);
