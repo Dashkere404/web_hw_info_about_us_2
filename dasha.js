@@ -23,3 +23,4 @@ document.addEventListener('DOMContentLoaded', function () {
       img.style.opacity = '1';
     }, 10);
   });
+});
