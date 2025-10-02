@@ -16,11 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
   btn.addEventListener('click', function () {
     const randomImage = images[Math.floor(Math.random() * images.length)];
     img.src = randomImage;
-    img.style.display = 'block';
+    img.classList.add('visible'); // ← добавляем класс
     img.style.opacity = '0';
     setTimeout(() => {
       img.style.transition = 'opacity 0.5s';
       img.style.opacity = '1';
     }, 10);
   });
-});
