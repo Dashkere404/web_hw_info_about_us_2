@@ -166,18 +166,19 @@ a:hover {
 }
 
 .achievements h3 {
-  margin-bottom: 1.2rem; /* отступ от заголовка до первой карточки */
+  margin-bottom: 1.2rem; 
 }
 
 .achievements-list {
   display: flex;
   flex-direction: column;
-  gap: 2rem; /* равномерный отступ МЕЖДУ карточками */
+  gap: 20rem; 
+  margin: 0rem;
 }
 
 .achievement {
   background-color: var(--card-bg);
-  padding: 1.2rem; /* можно чуть больше для воздуха */
+  padding: 1.2rem; 
   border-radius: 10px;
   box-shadow: var(--shadow);
 }
