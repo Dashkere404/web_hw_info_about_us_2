@@ -1,4 +1,4 @@
-/* Сброс и переменные */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,6 @@
   --transition: all 0.3s ease;
 }
 
-/* Основные стили */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
@@ -34,7 +33,6 @@ a:hover {
   color: var(--accent-color);
 }
 
-/* Шапка */
 .header {
   background-color: var(--primary-color);
   color: white;
@@ -77,14 +75,14 @@ a:hover {
   background-color: var(--secondary-color);
 }
 
-/* Основной контент */
+
 .main {
   max-width: 1200px;
   margin: 80px auto 0;
   padding: 2rem;
 }
 
-/* Герой-секция (аватар + инфо) */
+
 .person-hero {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -123,7 +121,7 @@ a:hover {
   color: var(--text-color);
 }
 
-/* Основной контент: био + сайдбар */
+
 .person-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -140,7 +138,7 @@ a:hover {
   margin-top: 0;
 }
 
-/* Список навыков */
+
 .skills {
   margin: 1.5rem 0;
 }
@@ -161,12 +159,12 @@ a:hover {
   margin: 0.4rem 0;
 }
 
-/* Достижения */
+
 .achievements {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .achievement {
