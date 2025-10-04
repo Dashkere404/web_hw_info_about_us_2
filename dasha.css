@@ -186,6 +186,14 @@ a:hover {
   text-align: center;
 }
 
+.social-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .social-link {
   display: inline-flex;
   align-items: center;
