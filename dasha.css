@@ -98,9 +98,10 @@ a:hover {
 .avatar {
   width: 200px;
   height: 200px;
-  border-radius: 15px;
+  border-radius: 12px;
   object-fit: cover;
   border: 5px solid var(--secondary-color);
+  box-shadow: var(--shadow);
 }
 
 .person-info h1 {
@@ -121,17 +122,15 @@ a:hover {
   color: var(--text-color);
 }
 
-/* Основной контейнер — теперь одна колонка */
 .person-content {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 }
 
-/* Общий стиль карточки */
 .card {
   background: var(--card-bg);
-  border-radius: 16px;
+  border-radius: 12px;
   padding: 1.8rem;
   box-shadow: var(--shadow);
   position: relative;
@@ -144,55 +143,28 @@ a:hover {
   box-shadow: 0 8px 20px rgba(236, 72, 153, 0.25);
 }
 
-/* Эффект градиентной рамки (опционально) */
 .card::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: -1;
   margin: -2px;
-  border-radius: 18px;
+  border-radius: 12px;
   background: linear-gradient(135deg, var(--accent-color), var(--secondary-color));
   opacity: 0.6;
-  filter: blur(10px);
 }
-
-/* Заголовки внутри карточек */
 .card h2,
 .card h3,
 .card h4 {
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
-
-/* Секция "Обо мне" */
-.bio {
-  /* уже внутри .card */
-}
-
-/* Достижения — карточки в колонку */
-.achievements-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.8rem;
-}
-
-.achievement {
-  background: var(--card-bg);
-  border-radius: 12px;
-  padding: 1.2rem;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-}
-
-/* Сайдбар убираем — всё в основной поток */
 .person-sidebar {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  /* больше не aside, а просто часть .person-content */
 }
 
-/* Кнопка интерактива — крупнее */
 #show-img-btn {
   padding: 0.8rem 1.5rem;
   font-size: 1.1rem;
@@ -210,7 +182,6 @@ a:hover {
   opacity: 0.95;
 }
 
-/* Ссылки — с иконками (пример без Font Awesome) */
 .links {
   text-align: center;
 }
@@ -234,7 +205,6 @@ a:hover {
   transform: translateY(-2px);
 }
 
-
 .about-text h2,
 .about-text h3 {
   color: var(--primary-color);
@@ -245,7 +215,6 @@ a:hover {
 .about-text h2 {
   margin-top: 0;
 }
-
 
 .skills {
   margin: 1.5rem 0;
@@ -267,6 +236,18 @@ a:hover {
   margin: 0.4rem 0;
 }
 
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.achievement {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
 
 .achievements {
   margin: 1.5rem 0;
@@ -275,9 +256,6 @@ a:hover {
 .achievements h3 {
   margin-bottom: 1.2rem; 
 }
-
-
-
 
 .achievement h4 {
   margin: 0 0 0.8rem;
@@ -301,9 +279,6 @@ a:hover {
   margin-top: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-
-
 
 .nowadays {
   background-color: var(--card-bg);
@@ -368,8 +343,6 @@ a:hover {
   color: var(--primary-color);
   margin-bottom: 1rem;
 }
-
-
 
 @media (max-width: 768px) {
   .nav {
